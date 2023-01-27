@@ -53,21 +53,10 @@ const options = {
 
 refs.startBtn.disabled = true;
 
-flatpickr('#datetime-picker', options);
+flatpickr('#datetime-picker', options)
+// flatpickr('#datetime-picker', options).config.onClose.push(function() { console.log('aaaaa')} );
 
-// refs.startBtn.addEventListener('click',()=>{
-//     timerId = setInterval(() => {
-//         const currentTime = Date.now();
-//         const selectedTime = 1674748020000;
-//         const ms =  selectedTime-currentTime;
-//         const { days, hours, minutes, seconds }=convertMs(ms)
-//         refs.days.textContent=`${addLeadingZero(days)}`;
-//         refs.hours.textContent=`${addLeadingZero(hours)}`;
-//         refs.minutes.textContent=`${addLeadingZero(minutes)}`;
-//         refs.seconds.textContent=`${addLeadingZero(seconds)}`;
-
-//       }, 1000);
-//   })
+// flatpickr.config.onClose.push(function() { console.log('aaaaa');} );
 
 function convertMs(ms) {
   // Number of milliseconds per unit of time
