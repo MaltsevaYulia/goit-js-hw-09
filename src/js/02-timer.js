@@ -40,7 +40,7 @@ function onFlatpickrClose() {
 }
 
 function onBtnClick() {
-  timerId = setInterval(() => {
+  const timerId = setInterval(() => {
           refs.startBtn.disabled = true;
           const currentTime = Date.now();
           const ms = selectedTime - currentTime;
