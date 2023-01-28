@@ -39,7 +39,7 @@ function onSubmit(evt) {
 
     delay += Number(step);
 
-    timerId = setTimeout(restart, delay);
+    timerId = setTimeout(restart, step);
   }, delay);
 }
 
